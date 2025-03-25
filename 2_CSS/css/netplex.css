@@ -1,6 +1,7 @@
 .poster-inline{
   position: relative;
   margin: 0 50px;
+  display: inline;
 
 }
 

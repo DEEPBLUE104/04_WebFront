@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+
+  border: 1px solid rgb(116, 108, 108);
+}
+
+main{
+  width: 1024px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header-left {
+  margin: 0;
+  display: flex;
+  flex-basis: 40%;
+
+  align-items:center;
+}
+
+
+[name= "icon"] {
+  flex-basis: 3.4%;
+  cursor: pointer;
+  font-size: 35px;
+  border: 0;
+  margin: 3px;
+  background-color: transparent;
+  /* transparent 배경색 투명 */
+}
+
+
+
+.header-left > section:nth-of-type(1) {
+  margin : 20px;
+}
+
+.header-center{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.header-center fieldset {
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  padding: 2px;
+
+  display: flex;
+}
+
+
+.search-area {
+  width: 500px;
+}
+
+.search-area fieldset {
+  border: 2px solid rgb(45, 59, 184);
+  border-radius: 5px;
+  padding: 2px;
+
+  display: flex;
+}
+
+#query{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+
+  border: 0;
+  outline: none;
+  /* outline : input 태그에 포커싱되었을 때
+  이를 표현하기 위한 바깥선 */
+  flex-basis: 92%;
+}
+
+#icon2{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  flex-basis: 8%;
+}
+
+#search-btn{
+  flex-basis: 8%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #887d7d;
+  background-color: #ddd;
+  /* transparent 배경색 투명 */
+}
+
+.header-right{
+  flex-basis: 40%;
+  margin-left: 60px;
+  display: flex;
+
+  align-items:center;
+}
+
+.header-right > section:nth-child(1) > fieldset {
+  border: 2px solid #4b4646;
+  border-radius: 30px;
+  padding: 7px;
+  background-color: #808080;
+  margin-left: 15px;
+
+  display: flex;
+
+}
+
+.header-right > section:nth-child(1) > #icon2 {
+  border: 2px solid #4b4646;
+  border-radius: 30px;
+  padding: 7px;
+  background-color: #808080;
+  margin-left: 15px;
+
+  display: flex;
+}
+

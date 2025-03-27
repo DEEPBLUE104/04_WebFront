@@ -14,19 +14,32 @@ body{
 
 header {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between; /* 요소들을 양 끝에 배치 */
+  justify-content: space-between; 
   width: 100%;
 }
 
 
-.header-left, .header-right {
+.header-left {
   flex-basis: 20%;
   margin: 0;
   display: flex;
 
-  align-items:center;
+  align-items:flex-start;
+}
+
+.header-right {
+  flex-basis: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  justify-content: end;
+}
+
+
+.header-left section:nth-child(1){
+  margin: 5px 15px 0 15px
 }
 
 .header-center{
@@ -36,15 +49,10 @@ header {
   display: flex;
 }
 
-.header-left icon:nth-child(1){
-  margin-right: 5px;
-}
-
 [name="icon"] {
   flex-basis: 3.4%;
   cursor: pointer;
   font-size: 30px;
-  border: 0;
   margin: 3px;
   padding: 5px;
   justify-content: center;
@@ -54,7 +62,7 @@ header {
 }
 
 #mike{
-  margin-left: 105px;
+  margin-left: 15px;
 }
 
 .header-center fieldset {
@@ -97,25 +105,30 @@ header {
   border-color: #dbdada;
 }
 
+#search-btn:hover{
+  background-color: #cccccc;
+  transition-duration: 0.2s;
+}
+
 
 .header-right > section:nth-child(1) > fieldset {
+  flex-basis: 30%;
   border: 2px solid #4b4646;
   border-radius: 30px;
   padding: 7px;
   background-color: #d4d4d4;
   margin-left: 0px;
-
-  display: flex;
 }
 
 
 .header-right #icon {
+  flex-basis: 20%;
   border: 2px solid #4b4646;
   border-radius: 30px;
   padding: 7px;
   background-color: #808080;
-  margin: auto;
-  margin-left: 15px;
+  margin: 0 50px;
+ 
   
   display: flex;
 }
@@ -188,7 +201,9 @@ hr {
 .list-middle ul li {
   padding-top: 20px;
   font-size: 17px;
-  margin-left: 10px;
+  margin-left: 10px;  
+
+  gap: 5px;
 }
 
 .list-bottom h1{

@@ -1,48 +1,270 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>포트폴리오.html</title>
 
   <link rel="stylesheet" href="css/포토폴리오.css">
-  
+
   <script src="https://kit.fontawesome.com/c8132189eb.js" crossorigin="anonymous"></script>
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    * {
+      font-family: 'Pretendard-Regular';
+    }
+  </style>
 </head>
+
 <body>
-  
+
   <main>
-    <section class="header">
+    <header>
       <section class="header-left">
-        <section name="icon" class="fa-solid fa-list"></section>
+        <section name="icon" class="fa-solid fa-bars"></section>
         <section name="icon" class="fa-brands fa-youtube" style="color: #c90d16;"></section>
-        <section><h1>YouTube</h1></section>
+        <section>
+          <h1>YouTube</h1>
+        </section>
       </section>
       <section class="header-center">
         <form action="#" name="search-form">
           <fieldset>
-            <input type="search" id="query" name="query"
-            autocomplete="off" placeholder="검색">
+            <input type="search" id="query" name="query" autocomplete="off" placeholder="검색">
 
-            <section id="icon2" class="fa-solid fa-keyboard"></section>
+            <section name="icon" class="fa-solid fa-keyboard"></section>
             <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
           </fieldset>
+          <section id="mike" name="icon" class="fa-solid fa-microphone"></section>
         </form>
-        <section id="icon2" class="fa-solid fa-microphone"></section>
       </section>
       <section class="header-right">
-        <section><fieldset>+만들기</fieldset></section>
-        <section id="icon2" class="fa-solid fa-bell"></section>
-        <section id="icon2" class="fa-regular fa-user fa-beat"></section>
+        <section>
+          <fieldset>+만들기</fieldset>
+        </section>
+        <section name="icon" class="fa-solid fa-bell"></section>
+        <section name="icon" class="fa-regular fa-user fa-beat"></section>
       </section>
-    </section>
-    <section class="content">
-      <section class="content-list"></section>
-      <section class="content-body"></section>
-    </section>
+    </header>
 
+    <section class="content">
+      <section class="content-list">
+        <section class="list-top">
+          <section id="icon2" class="fa-solid fa-house"> 홈</section>
+          <section id="icon2" class="fa-solid fa-fire-flame-curved"> Short</section>
+          <section id="icon2" class="fa-solid fa-tags"> 구독</section>
+        </section>
+
+        <hr>
+
+        <section class="list-middle">
+          <h1>내 페이지 > </h1>
+          <ul>
+            <li class="fa-solid fa-clock-rotate-left"> 시청 기록</li>
+            <li class="fa-solid fa-bars-staggered">재생목록</li>
+            <li class="fa-solid fa-file-video">내 동영상</li>
+            <li class="fa-solid fa-clapperboard">내 영화</li>
+            <li class="fa-solid fa-arrow-rotate-right">나중에 볼 영화</li>
+            <li class="fa-solid fa-heart">좋아요 표시한 동영상</li>
+            <li class="fa-solid fa-scissors">내 클립</li>
+          </ul>
+        </section>
+        <section class="list-bottom">
+          <hr>
+          <h1>구독</h1>
+          <ul>
+            <li class="fa-solid fa-circle-user"> 유저1 </li>
+            <li class="fa-solid fa-circle-user"> 유저2 </li>
+            <li class="fa-solid fa-circle-user"> 유저3 </li>
+            <li class="fa-solid fa-circle-user"> 유저4 </li>
+            <li class="fa-solid fa-circle-user"> 유저5 </li>
+            <li class="fa-solid fa-circle-user"> 유저6 </li>
+            <li class="fa-solid fa-circle-user"> 유저7 </li>
+            <li class="fa-solid fa-circle-user"> 유저8 </li>
+          </ul>
+
+        </section>
+      </section>
+      <section class="content-body">
+        <nav>
+          <ul>
+            <li>전체</li>
+            <li>믹스</li>
+            <li>음악</li>
+            <li>게임</li>
+            <li>슬라임</li>
+            <li>라이브</li>
+            <li>반려동물</li>
+            <li>요리</li>
+            <li>공예</li>
+          </ul>
+          <section class="content-body2">
+            <section class="content-body2-promotion">
+              <iframe width="400" height="280" src="https://www.youtube.com/embed/U9chqKJDY4A?si=04CZ1EQniVYYbyQA"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+              <section class="promotion2">
+                <section class="fa-solid fa-circle-user">
+                  플레이 리스트 <br>
+                  봄에 듣기 좋은 노래 <br>
+                  작곡가 김냥풍 작사가 김냥품 가수 가시
+                </section>
+                <section></section>
+              </section>
+            </section>
+            <section class="content-body2-firstline">
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/HRwSp_Tqje0?si=r2dYwOknFinnxH8w"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/aSJEts1vDXA?si=5Aq2o1CUcSV5Gfab"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/I0_ZXHzKysc?si=3Yb7Qg_yk6pNw-Pd"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/INLFlN-PZq4?si=lmm-JD8lCkYOFDpv"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/m28k8OGpL14?si=FvenS27yl6GnvrTU" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/aSJEts1vDXA?si=5Aq2o1CUcSV5Gfab"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe width="210" height="280" 
+                src="https://www.youtube.com/embed/x61Vlx5NLeQ?si=33lP5VUm7gkT0wD5" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+              </div>
+            </section>
+          </section>
+
+          <section class="content-body2-firstline-text">
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+            <div>
+              <h1>믹스<br>
+                노래 설명 블라블라 <br>
+              </h1>
+            </div>
+          </section>
+
+          <section class="content-body2-secondline">
+            <div>
+              <iframe width="210" height="280" src="https://www.youtube.com/embed/w5-9bLYDLRU?si=VOhHy8E1d7g5yyhQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="210" height="280" src="https://www.youtube.com/embed/AJe3nQMUmeQ?si=zANB3_4lsVjFycki"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div>
+              <iframe width="210" height="280" src="https://www.youtube.com/embed/INLFlN-PZq4?si=lmm-JD8lCkYOFDpv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="210" height="280" src="https://www.youtube.com/embed/I0_ZXHzKysc?si=3Yb7Qg_yk6pNw-Pd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div><iframe width="210" height="280" 
+              src="https://www.youtube.com/embed/9rOnKwQ-_lc?si=-A-KXh6TZaZL6XN6" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; 
+              autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+               web-share" referrerpolicy="strict-origin-when-cross-origin" 
+               allowfullscreen></iframe></div>
+               <div>
+                <iframe width="210" height="280" src="https://www.youtube.com/embed/w5-9bLYDLRU?si=VOhHy8E1d7g5yyhQ"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe width="210" height="280" 
+                src="https://www.youtube.com/embed/x61Vlx5NLeQ?si=33lP5VUm7gkT0wD5" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+              </div>
+          </section>
+      </section>
+
+      </nav>
+    </section>
   </main>
 
 
 </body>
+
 </html>

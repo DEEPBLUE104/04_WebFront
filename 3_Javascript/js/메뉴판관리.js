@@ -20,9 +20,12 @@ document.querySelector("#updateBtn").addEventListener("click", () => {
     document.querySelector("#updateBtn").style.display = "none";
 });
 
+ const menuName = document.querySelectorAll(".menu-name");
 
 document.querySelector("#addMenu").addEventListener("click", () => {
-  document.querySelectorAll(".menu").checked
-  
+  const input = document.createElement("input");
+  input.type = "checkbox"; 
 
-});
+  menuName.append(input);
+  });
+

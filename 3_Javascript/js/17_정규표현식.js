@@ -44,3 +44,70 @@ document.querySelector("#btn2").addEventListener("click", () => {
   div1.innerHTML += "/group$/, 100group : " + regExp3.test("100group") + "<hr>";
 
 });
+
+// 이름 유효성 검사하기
+document.getElementById("inputName").addEventListener("keyup", (e) => {
+  
+  //결과 출력용 span 얻어오기
+  const span = document.getElementById("inputNameResult");
+  
+  // 한글 2~5글자 정규표현식 객체 만들기
+  const regExp = /^[ㄱ-힣]{2,5}$/;
+  
+  // 빈칸인지 검사
+  if(e.target.value.length == 0){
+    span.innerText = "";
+    return;
+  }
+
+  // 유효성 검사
+  if (regExp.test(e.target.value)){  // 유효한 경우
+    span.innerText = " 유효한 이름 형식입니다. "
+    span.style.color = "green";
+    span.style.fontWeight = "bold";
+
+  } else {  // 유효하지 않은 경우
+    span.innerText = " 이름 형식이 유효하지 않습니다. "
+    span.style.color = "red";
+    span.style.fontWeight = "bold";
+  }
+
+});
+
+// 주민등록번호 유효성 검사하기
+document.getElementById("inputPno").addEventListener("keyup", (e) => {
+  
+  const span = document.getElementById("inputPnoResult");
+
+  if(e.target.value.length == 0){
+    span.innerText = "주민등록번호를 작성해주세요";
+  
+    span.classList.remove("confirm", "error");
+    return;
+  }
+
+  // 생년월일(6)-고유번호(7)
+  const regExp = /^\d{6}-\d{7}$/
+
+  if(regExp.test(e.target.value)){
+    span.innerText = "유효한 주민등록번호 형식입니다."
+
+    // span.classList.add("confirm");
+    // span.classList.remove("error");
+
+    span.classList.toggle("confirm",true);
+    span.classList.toggle("error", false);
+
+
+  } else {
+    span.innerText = "유효하지 않습니다."
+
+    // span.classList.add("error");
+    // span.classList.remove("confirm");
+
+    span.classList.toggle("confirm", false);
+    span.classList.toggle("error", true);
+ 
+  }
+
+});

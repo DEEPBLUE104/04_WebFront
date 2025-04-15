@@ -21,13 +21,23 @@ applyBtn.addEventListener("click", function(){
 
   const box = document.querySelector("#box"); // 박스요소 (대상)
 
-
+  
   // input에 작성된 값에 따라 #box에 스타일 추가
-  box.style.width = boxWidth.value + "px";
-  box.style.height = boxHeight.value + "px";
+
+
+  if(boxWidth.value.trim().length > 0) {
+    box.style.width = boxWidth.value + "px";
+  }
+
+  if(boxHeight.value.trim().length > 0) {
+    box.style.height = boxHeight.value + "px";
+  }
+
   box.style.fontSize = fs.value + "px";
 
-  box.style.fontWeight = fw.value;
+  if(fw != null) {
+    box.style.fontWeight = fw.value;
+  }
 
   box.style.color = fontColor.value;
   box.style.backgroundColor = bgColor.value;

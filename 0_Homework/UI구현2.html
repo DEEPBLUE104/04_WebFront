@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/0_Homework/UI.css">
+</head>
+<body>
+
+  <section id="align-test">
+   
+    <div>
+      <div>
+      너비: <input type="text" id="width">px 
+      </div>
+    
+      <div>
+        높이: <input type="text" id="height">px
+     </div>
+    </div>
+
+  
+    <br><br>
+  
+    <div>
+      <div>
+        글자크기: <input type="text" id="fontsize">px
+      </div>
+      
+      <div>
+        굵기: 
+        <input type="radio" name="font" id="nomal" value="nomal"> 보통
+        <input type="radio" name="font" id="bold" value="bold"> 굵게
+      </div>
+    </div>
+
+    <br><br>
+  
+    글자색:
+    <input type="text" id="color">
+    배경색
+    <input type="text" id="backgroundColor"> 
+    
+    <br><br>
+  
+    가로정렬: 
+    <input type="radio" name="fontwidth" id="left"> 왼쪽
+    <input type="radio" name="fontwidth" id="widthCenter"> 가운데
+    <input type="radio" name="fontwidth" id="right"> 오른쪽
+  
+    <br><br>
+  
+    세로정렬:
+    <input type="radio" name="fontheight" id="top"> 위
+    <input type="radio" name="fontheight" id="heightCenter"> 가운데
+    <input type="radio" name="fontheight" id="bottom"> 아래
+  
+    <br><br>
+  
+    출력 문자열 : <input type="text" id="word">
+  
+    <br>
+    
+    <button onclick="changeStyle()" id="btn">적용하기</button>
+    
+
+    <div id="test"><p class="in"></p></div>
+  </section>
+  
+  <script src="/0_Homework/UI.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI 구현</title>
+  
+  <style>
+  input:nth-of-type(1), 
+    input:nth-of-type(2),
+    input:nth-of-type(3) {
+      width: 50px;
+    }
+
+    #word {
+      width: 400px;
+    }
+    
+    div{
+      border: 1px solid black;
+    }
+
+    *{
+  box-sizing: border-box;
+  }
+  </style>
+
+</head>
+<body>
+  
+  <form>
+ 너비: 
+  <input type="number" id="width"> px 
+  
+  높이:
+  <input type="number" id="height"> px
+
+  <br><br>
+
+  글자크기: 
+  <input type="number" id="font-size"> px
+  
+  굵기:
+  <input type="radio" name="font" id="nomal"> 보통
+  <input type="radio" name="font" id="bold"> 굵게
+  <br><br>
+
+  글자색:
+  <input type="text" id="color">
+  배경색
+  <input type="text" id="backgroundColor"> 
+  
+  <br><br>
+
+  가로정렬: 
+  <input type="radio" name="font-width" id="left"> 왼쪽
+  <input type="radio" name="font-width" id="widthCenter"> 가운데
+  <input type="radio" name="font-width" id="right"> 오른쪽
+
+  <br><br>
+
+  세로정렬:
+  <input type="radio" name="font-height" id="top"> 위
+  <input type="radio" name="font-height" id="heightCenter"> 가운데
+  <input type="radio" name="font-height" id="bottom"> 아래
+
+  <br><br>
+
+  출력 문자열 : <input type="text" id="word">
+
+  <br>
+
+  <button onclick="changeStyle()">적용하기</button>
+
+  </form>
+
+
+ 
+  <div style="width: 200px; height: 200px;" id="test">Test</div>
+
+
+  <script>
+    function changeStyle(){
+      const box = document.getElementById("test");
+      const word = document.getElementById("word");
+      const backgroundColor = document.getElementById("backgroundColor")
+
+      box.style.backgroundColor = backgroundColor.value;
+
+      word.style.fontSize = word.
+    
+    }
+  </script>
+</body>
+</html>
